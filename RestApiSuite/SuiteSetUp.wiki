@@ -1,0 +1,9 @@
+|Import                       |
+|nl.hsac.fitnesse.fixture     |
+|nl.hsac.fitnesse.fixture.slim|
+
+|import                 |
+|six42.fitnesse.jdbcslim|
+
+|define table type  |
+|SQLCommand|as Table|
