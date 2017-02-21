@@ -17,6 +17,3 @@ This is required to support encryption.
 !path ${LibInstallPath}commons-codec-1.10.jar
 !path ${LibInstallPath}dbfit-core-3.2.0.jar
 
-Pet Clinic URL
-!define PETCLINIC_URL {http://localhost:9966/petclinic}
-
