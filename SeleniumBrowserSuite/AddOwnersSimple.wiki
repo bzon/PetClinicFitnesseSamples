@@ -2,7 +2,7 @@
 Suites: basic
 Test
 ---
-!define URL {http://localhost:9966/petclinic/owners/find.html}
+!define URL {${PETCLINIC_URL}/owners/find.html}
 
 |script          |browser test                                                                   |
 |open            |${URL}                                                                         |
