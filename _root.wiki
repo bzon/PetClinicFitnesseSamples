@@ -1,0 +1,12 @@
+!contents -R2 -g -p -f -h
+
+!include -c >Installation
+
+!*> Global vars
+Define all tests to be executed as SLIM:
+!define TEST_SYSTEM {slim}
+Pet Clinic URL
+!define PETCLINIC_URL {http://localhost:9966/petclinic}
+!define MYSQL_HOST {localhost}
+*!
+
