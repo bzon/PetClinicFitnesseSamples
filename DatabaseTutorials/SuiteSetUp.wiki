@@ -1,8 +1,3 @@
-!*> Project Setup
-|Import                       |
-|nl.hsac.fitnesse.fixture     |
-|nl.hsac.fitnesse.fixture.slim|
-
 |import                 |
 |six42.fitnesse.jdbcslim|
 
@@ -17,4 +12,3 @@
 |dbPassword        |petclinic                                |
 |dbAutoCommit      |true                                     |
 |CMD               |                                         |
-*!

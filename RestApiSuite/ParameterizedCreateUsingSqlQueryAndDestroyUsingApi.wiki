@@ -2,16 +2,19 @@
 Suites: advanced
 Test
 ---
-|scenario |delete users using id _|id                     |
-|set value|application/json       |for header|Content-Type|
-|delete   |${PETCLINIC_URL}/api/owners/@{id}              |
-|show     |response status                                |
-|check    |response status        |204                    |
+#|scenario         |delete users using id _|id                     |
+
+|table template   |delete users using id                   |
+|set value        |application/json|for header|Content-Type|
+|delete           |${PETCLINIC_URL}/api/owners/@{id}       |
+|show             |response status                         |
+|$response_status=|response status                         |
 
 |script|json http test|
 
 |delete users using id|
-|id                   |
-|111                  |
-|222                  |
-|333                  |
+|id  |response_status?|
+|111 |204             |
+|222 |204             |
+|333 |204             |
+|444 |404             |
