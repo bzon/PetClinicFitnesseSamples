@@ -10,7 +10,7 @@ Test
 {
   "address": "South Africa",
   "city": "Johannesburg",
-  "firstName": "Uvuvwevwevwe Ugwemubwem",
+  "firstName": "HACKATHON Ugwemubwem",
   "id": 444,
   "lastName": "Ossas",
   "pets": [
@@ -38,3 +38,4 @@ Test
 }}}|to|${URL}|
 |show|response status|
 |show|response       |
+|check|response status|201|
