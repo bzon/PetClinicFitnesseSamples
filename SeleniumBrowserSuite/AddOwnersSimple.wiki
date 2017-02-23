@@ -2,10 +2,11 @@
 Suites: basic
 Test
 ---
-!define URL {${PETCLINIC_URL}/owners/find.html}
+!define URL {${PETCLINIC_URL}}
 
 |script          |browser test                                                                   |
 |open            |${URL}                                                                         |
+|click|Find Owner|
 |click           |Add Owner                                                                      |
 |enter           |John           |as                                                |id=firstName|
 |enter           |Doe            |as                                                |id=lastName |

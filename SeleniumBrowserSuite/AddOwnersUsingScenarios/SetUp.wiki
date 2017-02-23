@@ -1,4 +1,4 @@
-!define URL {http://${PETCLINIC_URL}:9966/petclinic/owners/find.html}
+!define URL {${PETCLINIC_URL}/owners/find.html}
 
 |scenario|Given a page url ${URL}|
 |open    |${URL}                 |

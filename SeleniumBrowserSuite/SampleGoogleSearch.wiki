@@ -1,0 +1,10 @@
+---
+Test
+---
+|script          |browser test             |
+|open            |https://www.google.com   |
+|wait for visible|Google Search|
+|enter           |Puppies        |as|Search|
+|click           |Google Search            |
+|wait for visible|Images for Puppies       |
+|show            |take screenshot|result   |

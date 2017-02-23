@@ -6,12 +6,12 @@
 |nl.hsac.fitnesse.fixture.slim.web        |
 |nl.hsac.fitnesse.fixture.FixtureDebugTest|
 
-!define GRID_HUB {http://selenium-hub:4444/wd/hub}
+!define GRID_HUB {http://localhost:4444/wd/hub}
 
 |script               |selenium driver setup                                 |
-|start driver for     |chrome                          |
-|note|connect to driver for|chrome               |at               |${GRID_HUB}   |
+|note|start driver for     |chrome                          |
+|connect to driver for|chrome               |at               |${GRID_HUB}   |
 |note                 |connect to driver for|!-MicrosoftEdge-!|at|${GRID_HUB}|
 |note                 |connect to driver for|internet explorer|at|${GRID_HUB}|
-|note                 |connect to driver for|firefox          |at|${GRID_HUB}|
+|note|connect to driver for|firefox          |at|${GRID_HUB}|
 |show                 |driver description                                    |
