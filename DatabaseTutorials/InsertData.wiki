@@ -1,0 +1,30 @@
+---
+Test
+---
+|table template|insert owners                                                                                    |
+|openConnection                                                                                                  |
+|execute       |insert into owners values(@{id},'@{firstName}','@{lastName}','@{address}','@{city}',@{telephone})|
+|show          |success                                                                                          |
+|show          |rawResult                                                                                        |
+|$count=       |getColumnValueByName                                    |Count                                   |
+
+!| script|SQLCommand|PetClinicDB|
+
+|insert owners                                              |
+|id   |first name|last name|address|city   |telephone|count?|
+|88882|bbbb      |aaaa     |uptown |taguig |12345    |1     |
+|1218 |alskd     |asdlka   |asdas  |laskdas|128123   |1     |
+|77737|laskda    |asdas    |asda   |sadas  |111      |1     |
+
+#!| script|SQLCommand                       |PetClinicDB                          |
+#|openConnection                                                                  |
+#|execute |insert into owners values(1223456,'test','test123','qc','manila',12345)|
+#|show    |success                                                                |
+#|show    |rawResult                                                              |
+#|check   |getColumnValueByName             |Count               |1               |
+
+#!| SQLCommand|PetClinicDB|insert into owners values(%id%,'%first_name%','%last_name%','%address%','%city%',%telephone%)|
+#|id          |first_name |last_name           |address          |city             |telephone          |Count?          |
+#|11111       |bbbb       |aaaa                |uptown           |taguig           |12345              |1               |
+#|0199292     |alskd      |asdlka              |asdas            |laskdas          |128123             |1               |
+#|55555       |laskda     |asdas               |asda             |sadas            |111                |1               |

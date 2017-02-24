@@ -14,7 +14,7 @@ Test
 
 |delete users using id|
 |id  |response_status?|
-|111 |204             |
+|111 |400             |
 |222 |204             |
 |333 |204             |
 |444 |404             |

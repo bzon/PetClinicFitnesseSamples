@@ -1,7 +1,6 @@
 !*> Configuration
 !5 You can change the PETCLINIC_HOST variable with your local ip address.
-!5 You can do so by clicking [[Edit][.PetClinic?edit]] this page.
-!define PETCLINIC_HOST {172.20.10.11} 
+!define PETCLINIC_HOST {localhost} 
 !define PETCLINIC_URL {http://${PETCLINIC_HOST}:9966/petclinic}
 !define MYSQL_HOST {${PETCLINIC_HOST}}
 *!
