@@ -1,1 +1,3 @@
-# petclinic-fitnesse-test
+# Usage
+
+Clone this project under your **FitNesseRoot** directory.  
