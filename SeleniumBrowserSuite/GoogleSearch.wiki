@@ -6,7 +6,7 @@ Test
 |wait for visible|Google Search            |
 |enter           |Puppies        |as|Search|
 |click           |Google Search            |
-|wait for visible|Images for Puppies       |
+|wait for visible|Puppies                  |
 |show            |take screenshot|result   |
 
 
